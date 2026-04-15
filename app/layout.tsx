@@ -1,25 +1,23 @@
 import "./globals.css";
 import Sidebar from "@/components/Sidebar";
-import { Inter } from "next/font/google";
+import Topbar from "@/components/Topbar";
+import { Toaster } from "react-hot-toast";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export const metadata = {
-  title: "Migration Tool",
-};
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: any) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <div className="flex">
+      <body>
+        <div className="flex min-h-screen bg-white text-black">
           <Sidebar />
-          <div className="flex-1 p-6">{children}</div>
+
+          <div className="flex-1 p-6 md:p-10 ml-0 md:ml-64">
+            <Topbar />
+            {children}
+          </div>
         </div>
+
+        {/* ✅ ADD HERE */}
+        <Toaster position="top-right" />
       </body>
     </html>
   );

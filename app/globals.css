@@ -1,16 +1,8 @@
 @import "tailwindcss";
 
-/* FORCE DARK UI */
-html, body {
-  background-color: #020617;
-  color: white;
-}
-
-/* Fix default elements */
-button {
-  all: unset;
-}
-
-select {
-  color: white;
+/* clean base */
+body {
+  margin: 0;
+  background-color: white;
+  color: black;
 }
