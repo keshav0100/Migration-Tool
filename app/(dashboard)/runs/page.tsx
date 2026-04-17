@@ -22,12 +22,10 @@ export default function Runs() {
 
   return (
     <div className="max-w-5xl mx-auto">
-      {/* Heading */}
       <h1 className="text-3xl font-bold mb-6 text-gray-900">
-        🚀 Migration Runs
+        Migration Runs
       </h1>
 
-      {/* Button */}
       <button
         onClick={start}
         className="bg-green-600 text-white px-6 py-2 rounded-lg hover:bg-green-700 transition"
@@ -35,7 +33,6 @@ export default function Runs() {
         Start Migration
       </button>
 
-      {/* Progress */}
       <div className="mt-6 bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
         <div className="flex justify-between mb-2 text-gray-700 font-medium">
           <span>Progress</span>
@@ -50,9 +47,8 @@ export default function Runs() {
         </div>
       </div>
 
-      {/* Logs */}
       <div className="mt-6 bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
-        <h3 className="mb-2 font-semibold text-gray-800">📜 Logs</h3>
+        <h3 className="mb-2 font-semibold text-gray-800">Logs</h3>
 
         <ul className="text-sm text-gray-600 space-y-1 max-h-40 overflow-y-auto">
           {logs.map((log, i) => (

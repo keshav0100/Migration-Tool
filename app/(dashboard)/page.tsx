@@ -22,10 +22,7 @@ export default function Dashboard() {
 
   return (
     <div className="max-w-7xl mx-auto">
-      {/* Heading */}
       <h1 className="text-3xl font-bold mb-10 text-gray-900">Dashboard</h1>
-
-      {/* Stats */}
       <div className="grid md:grid-cols-3 gap-6">
         <StatsCard
           title="Connections"
@@ -44,7 +41,6 @@ export default function Dashboard() {
         />
       </div>
 
-      {/* Activity + Quick Actions */}
       <div className="grid md:grid-cols-2 gap-6 mt-12">
         <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition">
           <h2 className="text-lg font-semibold mb-3 text-gray-800">
@@ -78,11 +74,8 @@ export default function Dashboard() {
         </div>
       </div>
 
-      {/* Chart */}
       <div className="mt-12 bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
         <h2 className="mb-4 text-gray-800 font-semibold">Migration Stats</h2>
-
-        {/* 🔥 Responsive chart fix */}
         <div className="w-full h-[300px]">
           <ResponsiveContainer width="100%" height="100%">
             <BarChart data={data}>
